@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace WIndowsFormStudy
 {
-    class ClipboardItem : ICloneable
+    public class ClipboardItem : ICloneable
     {
         public static List<string> SupportedFormat { get; private set; } = new List<string>();
         public string DisplayText { get; private set; }

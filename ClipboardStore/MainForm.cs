@@ -79,12 +79,14 @@ namespace WIndowsFormStudy
 
         private void ClipboardItemAdded(object sender, ClipboardEventArgs e)
         {
+            clipboardBuffer.RemoveItem(e.Item);
+
             clipboardBuffer.Insert(0, e.Item);
 
             //5개까지 클립보드를 저장함
             if (clipboardBuffer.Count > 5)
             {
-               clipboardBuffer.RemoveAt(clipboardBuffer.Count - 1);
+                clipboardBuffer.RemoveAt(clipboardBuffer.Count - 1);
             }
 
             RefreshButtons();

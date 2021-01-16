@@ -53,6 +53,7 @@
     <Compile Include="ClipboardEventArgs.cs" />
     <Compile Include="ClipboardItem.cs" />
     <Compile Include="ClipboardObserver.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
